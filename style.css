@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap);
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #00ff37;
+    color: #fff;
+    font-family: 'DM Mono', monospace
+}
+
+ol {
+    align-items: center;
+    justify-content: center
+}
+
+#title h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .2rem .85rem .25rem;
+    position: relative;
+    cursor: inherit;
+    margin-left: 3%
+}
+
+#title h1:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+li::marker {
+    font-weight: bolder;
+    font-style: oblique
+}
+
+.card-list {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+
+::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25)
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d)
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: rgb(255, 0, 200);
+    box-shadow: -1rem 0 3re blue;
+    transition: .2s;
+    overflow: hidden
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+    cursor: pointer
+}
+
+.card:hover ~ .card {
+    transform: translateX(130px)
+}
+
+.card:not(:first-child) {
+    margin-left: -130px
+}
+
+.card-header h2 {
+    text-transform: capitalize
+}
+
+.card-header h2:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.img {
+    margin-top: -25%;
+    margin-left: 15%;
+    width: 250px;
+    transition: .5s all ease-in
+}
+
+h2.result:hover {
+    transform: scale(.6) translateY(200px) translateX(50px) rotate(360deg)
+}
+
+h2.result {
+    margin-top: -25%;
+    transition: .5s all ease-in
+}
+
+#card-list2 h2.result {
+    margin-top: -25%
+}
+
+.more-accrate {
+    background: linear-gradient(#00ff37)
+}
